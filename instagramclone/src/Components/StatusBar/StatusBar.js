@@ -24,6 +24,34 @@ class StatusBar extends Component {
             {
                 "username":"testing",
                 "imageURL":"../../images/pp1.png"
+            },
+            {
+                "username":"Vas",
+                "imageURL":"../../images/pp1.png"
+            },
+            {
+                "username":"TESTINGS",
+                "imageURL":"../../images/pp1.png"
+            },
+            {
+                "username":"tes",
+                "imageURL":"../../images/pp1.png"
+            },
+            {
+                "username":"tes",
+                "imageURL":"../../images/pp1.png"
+            },
+            {
+                "username":"tes",
+                "imageURL":"../../images/pp1.png"
+            },
+            {
+                "username":"tes",
+                "imageURL":"../../images/pp1.png"
+            },
+            {
+                "username":"tes",
+                "imageURL":"../../images/pp1.png"
             }
         ]
         this.setState({statusList: data});
