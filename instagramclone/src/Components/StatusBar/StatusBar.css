@@ -1,0 +1,37 @@
+.statusbar__container{
+    height: 120px;
+    width: 615px;
+    background-color: white;
+    border: 1px solid #dbdddb;
+    margin-top: 25px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.statusbar__container {
+    /* Hide the vertical scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Microsoft Edge */
+}
+
+.statusbar__container::-webkit-scrollbar {
+    /* Hide the scrollbar for WebKit (Safari, Chrome) */
+    display: none;
+}
+
+.statusbar__status {
+    min-width: 55px;
+    min-height: 55px;
+    border: 3px solid #DF3968;
+}
+
+.status {
+    margin: 25px 10px;
+}
+
+.statusbar__text {
+    font-size: 12px;
+    max-width: 50px;
+    overflow-x: hidden;
+    text-align: center;
+}
