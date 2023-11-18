@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './LoginPage.css'
+import SingIN from '../SingIn/SingIN';
+import SingUp from '../SingUp/SingUp';
 import Grid from '@material-ui/core/Grid';
 import inst_image from '../../images/9364675fb26a.svg';
 import insta_logo from '../../images/logoinsta.png';
@@ -10,8 +12,18 @@ import playstore from '../../images/play.png';
 class LoginPage extends Component {
     constructor(props){
         super(props);
-        this.state = { }
+        this.state = {
+            isLogin: true
+         }
     }
+
+    changeLogin=()=>{
+        if(this.state.isLogin)
+            this.setState({isLogin: false});
+        else
+            this.setState({isLogin: true});
+    }
+
     render() {
         return (
             <div>
@@ -27,10 +39,10 @@ class LoginPage extends Component {
                                 <div className="loginpage__rightcomponent">
                                     <img className="loginpage__logo" src={insta_logo} />   
                                     <div className="loginpage__singin">
-                                            <input className="loginpage__text" type="text" placeholder="Phone number, username, or email" />
-                                            <input className="loginpage__text" type="password" placeholder="Password" />
-                                            <button className="loginpage__button" >Login In</button>
-
+                                            {
+                                                this.state.isLogin ? <SingIN/> : <SingUp/>
+                                            }
+                                            
                                             <div className="login__ordiv">
                                                 <div className="login__dividor"></div>
                                                 <div className="login__or">OR</div>
@@ -44,13 +56,17 @@ class LoginPage extends Component {
                                     </div>                                
                                  </div>
                                  <div className="loginpage__signupoption">  
-                                    <div className = "loginpage__signin">
-                                        Dont't have an account? <span style={{ "fontWeight":"bold", "color": "#0395F6" }}>Sign up</span>
-                                    </div>
 
-                                    <div className = "loginpage__signup">
-                                        Have an account? <span style={{ "fontWeight":"bold", "color": "#0395F6" }}>Sign in</span>
-                                    </div>
+                                    {
+                                        this.state.isLogin ? 
+                                        <div className = "loginpage__signin">
+                                            Dont't have an account? <span onClick= {this.changeLogin} style={{ "fontWeight":"bold", "color": "#0395F6" }}>Sign up</span>
+                                        </div> :
+                                        <div className = "loginpage__signup">
+                                            Have an account? <span style={{ "fontWeight":"bold", "color": "#0395F6" }}>Sign in</span>
+                                        </div>
+                                    }
+                                               
                                 </div> 
 
                                 <div className="loginPage__downloadSection">

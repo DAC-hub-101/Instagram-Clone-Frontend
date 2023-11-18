@@ -14,8 +14,8 @@ body {
 }
 
 .loginpage__rightcomponent { 
-    height: 380px;
     width: 350px;
+    padding-bottom: 25px;
     border: 1px solid #DBDBDB;
     margin-top: 25px;
     text-align: center;
@@ -91,17 +91,18 @@ body {
 }
 
 .loginpage_signin{
-
+    margin-top: 20px;
 }
 
 .loginpage_singup{
-
+    margin-top: 20px;
 }
 
 .loginPage__downloadSection {
     height: 105px;
     width: 350px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .loginPage__option { 
