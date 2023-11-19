@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./MainPage.css";
 import Post from '../Post/Post';
+import uploadImage from "../../images/upload.png"
 
 class MainPage extends Component {
     constructor(props) {
@@ -51,6 +52,9 @@ class MainPage extends Component {
     render () {
         return ( 
             <div>
+                <div style={{ "textAlign":"center", "margin":"5px"}}>
+                    <img src={uploadImage} className="mainpage__uploadicon"/>
+                </div>
                 {
                     this.state.postArray.map((item,index) => (
                         <Post id={item.postId} userName={item.userName} postImage={item.postImageURL} likes={item.likes} />
