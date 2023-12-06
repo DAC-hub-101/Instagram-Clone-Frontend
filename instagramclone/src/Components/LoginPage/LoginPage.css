@@ -1,19 +1,16 @@
 body {
     background-color: #FAFAFA;
 }
-
 .loginpage__main {
     display: flex;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: -65px;
 }
-
 .loginpage__logo {
     width: 175px;
     margin-top: 25px;
 }
-
-.loginpage__rightcomponent { 
+.loginpage_rightcomponent { 
     width: 350px;
     padding-bottom: 25px;
     border: 1px solid #DBDBDB;
@@ -21,22 +18,19 @@ body {
     text-align: center;
     background-color: white;
 }
-
-.loginpage__signin {
-    margin-top:25px;
+.loginPage__signin {
+    margin-top: 25px;
 }
-
-.loginpage__text {
-    width: 258px;
+.logipage__text{
+    width:258px;
     height: 36px;
-    margin: 5px;
+    margin:5px;
     border: 1px solid #DBDBDB;
     background-color: #FAFAFA;
     padding-left: 10px;
     border-radius: 5px;
 }
-
-.loginpage__button {
+.login__button {
     width: 270px;
     height: 36px;
     border-radius: 5px;
@@ -45,6 +39,20 @@ body {
     border: 1px solid #0395F6;
     background-color: #0395F6;
     color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login__button:hover {
+    /* Darken the button color slightly on hover */
+    background-color: #0275d8; /* Adjust this color as needed */
+    transform: scale(1.05);
+}
+
+.login__button:active {
+    /* Change color to a different shade when clicked */
+    background-color: #025aa5; /* Adjust this color as needed */
+    transform: scale(0.95);
 }
 
 .login__ordiv {
@@ -52,62 +60,52 @@ body {
     justify-content: center;
     margin-top: 10px;
 }
-
-.login__dividor { 
+.login__dividor {
     width: 80px;
     height: 0px;
     margin-top: 10px;
-    border: 1px solid #DBDBDB;
+    border:1px solid #DBDBDB;
 }
-
 .login__or {
-    margin: 0px 20px;
+    margin: 0px 10px;
     font-weight: bold;
     color: #8E8E8E;
 }
-
 .login__fb {
     color: #395185;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 30px;
 }
-
-.login__forgot {
-    color: #395185;
+.login_forgt {
+    color: rgba(var(--fe0,0,55,107),1);
     font-size: 12px;
     line-height: 14px;
     margin-top: 12px;
     text-align: center;
 }
-
-.loginpage__signupoption { 
+.loginpage__signupoption {
     margin-top: 25px;
-    height: 56px;
+    height:56px;
     width: 350px;
     background-color: white;
     border: 1px solid #DBDBDB;
     text-align: center;
 }
-
-.loginpage_signin{
+.loginPage__signin{
     margin-top: 20px;
 }
-
-.loginpage_singup{
+.loginPage__signup {
     margin-top: 20px;
 }
-
 .loginPage__downloadSection {
     height: 105px;
     width: 350px;
     text-align: center;
     margin-top: 20px;
 }
-
-.loginPage__option { 
+.loginPage__option {
     margin-top: 20px;
 }
-
 .loginPage_dwimg {
     margin: 5px;
 }

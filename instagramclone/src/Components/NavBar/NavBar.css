@@ -3,16 +3,12 @@
     background-color: white;
     border-bottom: 1px solid #dbdbdb;
 }
-
-.navbar_logo {
+.navbar_logo{
     margin-top: 10px;
 }
-
 .navbar__img {
     margin:15px 10px;
-    
 }
-
 .navbar__searchBar {
     height: 30px;
     width: 215px;

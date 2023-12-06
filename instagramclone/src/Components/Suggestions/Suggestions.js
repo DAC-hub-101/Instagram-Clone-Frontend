@@ -1,56 +1,51 @@
 import React, { Component } from 'react';
 import "./Suggestions.css"
 import { Avatar } from '@material-ui/core';
-import imageSrc from '../../images/pp1.png';
+import imageSrc1 from '../../images/pp1.png'
+import imageSrc2 from '../../images/pp2.png'
+import imageSrc3 from '../../images/pp3.jpeg'
 
-class Suggestions extends Component {
+class Suggestions extends Component {   
     constructor(props) {
         super(props);
-        this.state = { }
+        this.state = {  }
     }
-    render () {
+    render() { 
         return ( 
-            <div>
-                <div className = "suggestions__container">
-                    <div className = "suggestions__header">
-                        <div>Suggestions For You</div>
+        <div>
+            <div className="suggestions__container">
+                <div className="suggestions__header">
+                    <div>Suggestions For You</div>
+                </div>
+                <div className="suggestions__body">
+                    <div className="suggestions__friends">
+                        <Avatar src={imageSrc1} className="suggestions__image"/>
+                        <div className="suggestions__username">testing_profile</div>
                     </div>
-                    <div className="suggestions__body">
-                        <div className="suggestios__friends">
-                            <Avatar src={imageSrc}  className="suggestions_image"/>
-                            <div className="suggestions__username">Portfolio</div>
-                        </div>
-
-                        <div className="suggestios__friends">
-                            <Avatar src={imageSrc}  className="suggestions_image"/>
-                            <div className="suggestions__username">Soft skills interview</div>
-                        </div>
-                        
-                        <div className="suggestios__friends">
-                            <Avatar src={imageSrc}  className="suggestions_image"/>
-                            <div className="suggestions__username">Technical_interview</div>
-                        </div>
-
-                        <div className="suggestios__friends">
-                            <Avatar src={imageSrc}  className="suggestions_image"/>
-                            <div className="suggestions__username">Recruiter</div>
-                        </div>
-
-                        <div className="suggestios__friends">
-                            <Avatar src={imageSrc}  className="suggestions_image"/>
-                            <div className="suggestions__username">Email me</div>
-                        </div>
-
-                        <div className="suggestios__friends">
-                            <Avatar src={imageSrc}  className="suggestions_image"/>
-                            <div className="suggestions__username">Call me</div>
-                        </div>
-
+                    <div className="suggestions__friends">
+                        <Avatar src={imageSrc2} className="suggestions__image"/>
+                        <div className="suggestions__username">dummy_user</div>
+                    </div>
+                    <div className="suggestions__friends">
+                        <Avatar src={imageSrc3} className="suggestions__image"/>
+                        <div className="suggestions__username">technical_interview</div>
+                    </div>
+                    <div className="suggestions__friends">
+                        <Avatar src={imageSrc2} className="suggestions__image"/>
+                        <div className="suggestions__username">Preparation</div>
+                    </div>
+                    <div className="suggestions__friends">
+                        <Avatar src={imageSrc3} className="suggestions__image"/>
+                        <div className="suggestions__username">Do you like the project</div>
+                    </div>
+                    <div className="suggestions__friends">
+                        <Avatar src={imageSrc1} className="suggestions__image"/>
+                        <div className="suggestions__username">Rate me </div>
                     </div>
                 </div>
             </div>
-        );
+        </div> );
     }
- }
-
- export default Suggestions;
+}
+ 
+export default Suggestions;
